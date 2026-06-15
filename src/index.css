@@ -1,0 +1,36 @@
+
+
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+
+@theme {
+  --font-sora: 'Sora', sans-serif;
+}
+
+body {
+  font-family: var(--font-sora);
+}
+
+:root {
+  @apply bg-white text-black leading-5;
+  line-height: 1.2; /* 120% fonti-size is 40, line-height is 48 */
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+header,
+footer {
+  @apply container mx-auto px-4 py-4 lg:px-20 lg:py-6; /* design has header, footer with lef/right 80px, top/bottom 24px */
+}
+
+section {
+  @apply container mx-auto px-4 py-10 lg:px-20 lg:py-[60px]; /* design has header, footer with lef/right 80px, top/bottom 60px but tailwind
+  doesn't have py-15 */
+}
