@@ -16,7 +16,7 @@ const Skills = () => {
         <section className=" flex flex-col gap-5 items-center px-0 lg:px-8 md:px-4 ">
             <VariableWeightText regulartxt="My" boldtxt="Skills"/>
 
-                <div className='grid grid-cols-2 gap-5 lg:grid-cols-4 md:grid-cols-2'>
+                <div className='mt-12 grid grid-cols-2 gap-5 lg:grid-cols-4 md:grid-cols-2'>
                 <SkillCard txt="Python" icon={PythonIcon}/>
                 <SkillCard txt="Javascript" icon={JavascriptIcon}/>
                 <SkillCard txt="Git" icon={GitIcon}/>
