@@ -13,7 +13,7 @@ usable space for icon only = 186px − 48px − 32px - 28 px (text-lg label, 1.7
 const SkillCard = ({icon, txt}) => {
     return (
         <div className={`max-w-[186px] max-h-[186px] rounded-md border-2 border-black bg-white aspect-square`}>
-            <div className='rounded hover:invert bg-white flex flex-col p-6 gap-8 items-center'>
+            <div className='rounded hover:bg-sky-400 bg-white flex flex-col p-6 gap-8 items-center'>
                 <img src={icon} className='w-[56px] h-[56px] object-contain'/>
                 <p className='text-lg font-bold'> {txt} </p>
             </div>

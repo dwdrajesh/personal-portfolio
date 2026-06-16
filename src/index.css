@@ -6,6 +6,8 @@
 
 @theme {
   --font-sora: 'Sora', sans-serif;
+  --color-black: #0284c7;        /* sky-600 → every text-black/bg-black/border-black */
+  --color-neutral-700: #38bdf8;  /* sky-400 → Button hover (was grey) */
 }
 
 body {

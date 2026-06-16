@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="text-white flex items-center justify-between">
             <Logo invert={true}/>
             <div className="flex flex-col gap-3 items-center">
-            <p> &copy; 2023 Rajesh Dawadi </p>
+            <p> &copy; 2026 </p>
             <p className='font-semibold'> Developed using React </p>
             </div>
         </footer>
