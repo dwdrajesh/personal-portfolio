@@ -25,8 +25,8 @@ const skillsData = [
 
 const Skills = () => {
     return (
-        <section className=" flex flex-col gap-5 items-center px-0 lg:px-8 md:px-4 ">
-            <VariableWeightText regulartxt="My" boldtxt="Skills"/>
+        <section id="skills" className=" flex flex-col gap-5 items-center px-0 lg:px-8 md:px-4 ">
+            <VariableWeightText regulartxt="My" boldtxt="Skills" className="text-brand-600"/>
 
                 <div className='mt-12 grid grid-cols-2 gap-5 lg:grid-cols-4 md:grid-cols-2'>
                     {
@@ -34,14 +34,6 @@ const Skills = () => {
                             <SkillCard key={skill.title} txt={skill.title} icon={skill.icon}/>
                         ))
                     }
-                {/* <SkillCard txt="Python" icon={PythonIcon}/>
-                <SkillCard txt="Javascript" icon={JavascriptIcon}/>
-                <SkillCard txt="Git" icon={GitIcon}/>
-                <SkillCard txt="C++" icon={CppIcon}/>
-                <SkillCard txt="Android" icon={Android}/>
-                <SkillCard txt="React" icon={ReactIcon}/>
-                <SkillCard txt="Linux" icon={LinuxIcon}/>
-                <SkillCard txt="Kotlin" icon={KotlinIcon}/> */}
             </div>
         </section>
     )
