@@ -8,13 +8,14 @@ const Button = ({txt, icon, href, download}) => {
                 {icon && <img src={icon} className='w-5 h-5'/>}
                  </>);
 
+    const isAnchor = href?.startsWith('#');
     return (
         <div className="flex gap-3 items-center">
             {href ? (
                 <a
                     href={href}
                     className={classes}
-                    {...(download ? {download} : { target: '_blank', rel: 'noopener noreferrer' })}
+                    {...(download ? {download} : (!isAnchor ? {target: '_blank'} : {}))}
                 >
                     {inner}
                 </a>

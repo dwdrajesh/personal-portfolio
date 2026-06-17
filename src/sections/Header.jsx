@@ -13,6 +13,8 @@ const Header = () => {
                 <nav className="flex gap-8 font-bold text-brand-600">
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
                 </nav>
             <Button txt='Resume' icon={DownloadIcon} href={ResumeFile} />
             </header>

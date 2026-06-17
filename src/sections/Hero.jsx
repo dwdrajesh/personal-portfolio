@@ -20,17 +20,17 @@ import LinuxIcon from '../assets/linux-svgrepo-com.svg';
 
 const Hero = () => {
     return (
-        <section id='hero' className='flex flex-col lg:flex-row gap-10 items-center justify-between'>
+        <section id='hero' className='flex flex-col lg:flex-row gap-10 items-center lg:items-stretch justify-between'>
             <div className='flex flex-col gap-5 items-center lg:items-start'>
-                <p>
+                <p className='mt-10 text-2xl'>
                     Software Developer with over 10 years of experience in software development and research expertise in areas including realtime communication software, augmented reality (AR) software and applied AI to improve LLMs.
                 </p>
 
 
-            <div className='flex flex-row lg:flex-row gap-10 items-end justify-end lg:justify-start'>
-                <Button txt='Contact' />
-                <Button txt='Resume' icon={DownloadIcon} href={ResumeFile} />
-            </div>
+                <div className='flex flex-row lg:flex-row gap-10 items-end lg:mt-auto justify-end lg:justify-start'>
+                    <Button txt='Contact' href="#contact"/>
+                    <Button txt='Resume' icon={DownloadIcon} href={ResumeFile} />
+                </div>
             </div>
             <img src={Banner} className='w-full max-w-md ' />
 
