@@ -20,18 +20,17 @@ import MailIcon from '../assets/mail.svg';
 
 const Contact = () => {
     return (
-        <section id="contact" className="flex flex-col lg:flex-row gap-8 items-center justify-between mt-20 rounded-lg customSmallShadow border-2 border-blue-500">
+        // py-2 ! inverts global padding
+        <section id="contact" className="p-5! flex flex-col lg:flex-row gap-8 items-stretch justify-between mt-20 rounded-lg customSmallShadow border-2 border-blue-500">
 
             {/* // left side of the contact section */}
-            <div className='flex flex-col gap-5 justify-end lg:items-start'>
+            <div className='flex flex-col gap-5 justify-center lg:items-start'>
                 <p className='mt-10 text-2xl font-bold text-brand-600'>Get in touch</p>
                 <p className='text-lg text-brand-600'>I am located in San Francisco, Bay Area and always open to discussing new projects and creative ideas. </p>
-                <button className='flex justify-end gap-2 text-brand-600 font-bold'>
-                        <a href="mailto:rajesh.dawadi@gmail.com" aria-label="Email me"
-                                className="w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center hover:bg-brand-400 transition">
-                            <img src={MailIcon} className="w-7 h-7" />
-                        </a>
-                </button>
+                <a href="mailto:rajesh.dawadi@gmail.com" aria-label="Email me"
+                    className="w-16 h-16 rounded-full bg-brand-600 text-white flex items-center justify-center hover:bg-brand-400 transition">
+                    <img src={MailIcon} className="w-7 h-7" />
+                </a>
             </div>
 
             {/* // right side of the contact section  = Map */}
@@ -39,7 +38,7 @@ const Contact = () => {
 
             <iframe
                 src="https://www.google.com/maps?q=San Francisco, Bay Area&output=embed"
-                className="w-full lg:w-2/3 h-[400px] rounded-lg border-0"
+                className="w-full lg:w-2/3 self-stretch min-h-[400px] rounded-lg border-0"
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
